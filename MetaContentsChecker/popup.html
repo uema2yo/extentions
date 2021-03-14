@@ -1,0 +1,93 @@
+<html>
+
+<head>
+  <title>Meta Content Checker</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+  <header class="hdr">
+    <h1 class="ttl">Meta Content Checker</h1>
+    <ul id="domainList" class="domainLst">
+      <li>
+        <a href="#" data-domain="p">Production</a>
+      </li>
+      <li>
+        <a href="#" data-domain="sl">Staging / Local</a>
+      </li>
+    </ul>
+  </header>
+  <ul class="lst">
+    <li>
+      <dl class="itmDl">
+        <dt>Title (title)</dt>
+        <dd id="title"></dd>
+      </dl>
+    </li>
+    <li>
+      <dl class="itmDl">
+        <dt>Description (meta[name="description"])</dt>
+        <dd id="description"></dd>
+      </dl>
+    </li>
+    <li>
+      <dl class="cntnrDl">
+        <dt>OGP</dt>
+        <dd>
+          <ul class="itmLst">
+            <li>
+              <dl class="itmDl">
+                <dt>Title (meta[property="og:title"])</dt>
+                <dd id="ogp_title"></dd>
+              </dl>
+            </li>
+            <li>
+              <dl class="itmDl">
+                <dt>Description (meta[property="og:description"])</dt>
+                <dd id="ogp_description"></dd>
+              </dl>
+            </li>
+            <li>
+              <dl class="itmDl">
+                <dt>Image (meta[property="og:image"])</dt>
+                <dd id="ogp_image"></dd>
+              </dl>
+              <p class="is-sl is-hidden">※ CDN などサイト外に OGP 画像を保存している場合、Staging/Local モードでは表示できません。</p>     
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </li>
+    <li>
+      <dl class="cntnrDl">
+        <dt>Twitter</dt>
+        <dd>
+          <ul class="itmLst">
+            <li>
+              <dl class="itmDl">
+                <dt>Title (meta[name="twitter:title"])</dt>
+                <dd id="twitter_title"></dd>
+              </dl>
+            </li>
+            <li>
+              <dl class="itmDl">
+                <dt>Description (meta[name="twitter:description"])</dt>
+                <dd id="twitter_description"></dd>
+              </dl>
+            </li>
+            <li>
+              <dl class="itmDl">
+                <dt>Image (meta[name="twitter:image"])</dt>
+                <dd id="twitter_image"></dd>
+              </dl>
+              <p class="is-sl is-hidden">※ CDN などサイト外に Twitter 画像を保存している場合、Staging/Local モードでは表示できません。</p>     
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </li>
+  </ul>
+  <script src="js/popup.js"></script>
+</body>
+
+</html>

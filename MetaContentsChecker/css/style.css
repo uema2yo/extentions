@@ -1,0 +1,108 @@
+ul,
+ol,
+dl,
+dt,
+dd {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+html {
+  width: 670px;
+  color: #333;
+  font-size: 14px;
+  font-family: Hiragino Kaku Gothic Pro;
+  line-height: 1.5;
+}
+body {
+  margin: 0;
+  padding: 55px 0 0;
+  font-size: inherit;
+}
+.hdr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ddd;
+  border-bottom: 1px solid white;
+}
+.ttl {
+  margin: 0;
+  padding: 1rem;
+  font-size: 18px;
+}
+.domainLst {
+  display: flex;
+  margin-right: 1rem;
+  text-align: center;
+}
+.domainLst > li > a {
+  display: block;
+  width: 80px;
+  padding: 0.5rem 1rem;
+  border: 1px solid #666;
+  color: #333;
+  font-size: 10px;
+  text-decoration: none;
+}
+.domainLst > li:first-of-type > a {
+  border-radius: 9999px 0 0 9999px;
+}
+.domainLst > li:last-of-type > a {
+  border-left: none;
+  border-radius: 0 9999px 9999px 0;
+}
+.domainLst > li > a.is-selected {
+  color: white;
+  background-color: #333;
+}
+.lst {
+  padding: 1rem;
+}
+.lst > li {
+  padding: 1rem 0 2rem;
+}
+.lst > li:first-of-type {
+  border-bottom: 1px solid #999;
+}
+.cntnrDl > dt {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #eee;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+}
+.cntnrDl > dd {
+  padding: 0 1rem;
+}
+.itmLst > li:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+.itmDl > dt {
+  margin-bottom: 1rem;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+}
+.itmDl > dd > img {
+  width: 600px;
+  margin-top: 1rem;
+}
+.msg {
+  color: #aa7f4d;
+}
+.msg > strong {
+  font-size: 16px;
+  font-weight: bold;
+}
+.isEmpty {
+  color: #ff3860;
+}
+.is-hidden {
+  display: none;
+}
