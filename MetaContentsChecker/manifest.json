@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "Meta Content Checker (社内用)",
+    "name": "Meta Contents Checker",
     "author": "Yoshinori Uematsu",
-    "description": "HTML 内の title と meta コンテンツを可視化する機能拡張です。※ 勤務先の社内で使用することを目的としています。",
+    "description": "HTML 内の title と meta コンテンツを可視化する機能拡張です。",
     "version": "1.0",
     "content_scripts": [{
         "matches": ["http://*/*", "https://*/*" ],
